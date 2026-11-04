@@ -1,0 +1,1 @@
+import{n as e}from"./jspdf.es.min-CAbVuQD2.js";export{e as default,e as jsPDF};
