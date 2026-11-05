@@ -1,0 +1,1496 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Demo – Designprüfung vom 5. November 2026</title>
+    <style>
+      :root {
+        font:
+          15px/1.55 -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          sans-serif;
+        color: #1d1d1f;
+        background: #f5f5f7;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      main {
+        max-width: 1240px;
+        margin: 32px auto;
+        padding: 0 24px 40px;
+      }
+      h1 {
+        font-size: 30px;
+        line-height: 1.2;
+        margin: 8px 0 12px;
+      }
+      h2 {
+        font-size: 20px;
+        margin: 0 0 16px;
+      }
+      p {
+        margin: 8px 0;
+      }
+      .kicker {
+        color: #005363;
+        font-weight: 600;
+      }
+      .card {
+        padding: 24px;
+        background: white;
+        border: 1px solid #cdd2d8;
+        border-radius: 6px;
+        margin-top: 24px;
+      }
+      .metrics {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1px;
+        background: #cdd2d8;
+        border: 1px solid #cdd2d8;
+        margin: 24px 0;
+      }
+      .metrics div {
+        padding: 20px;
+        background: white;
+      }
+      .metrics strong {
+        display: block;
+        font-size: 26px;
+      }
+      .metrics span,
+      .muted {
+        color: #626268;
+      }
+      .table-wrap {
+        overflow: auto;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        table-layout: fixed;
+      }
+      th,
+      td {
+        padding: 14px 16px;
+        border: 1px solid #cdd2d8;
+        text-align: left;
+        vertical-align: top;
+        overflow-wrap: anywhere;
+      }
+      th {
+        font-size: 13px;
+        background: #f0f3f5;
+      }
+      th:first-child {
+        width: 19%;
+      }
+      th:last-child {
+        width: 125px;
+      }
+      a {
+        color: #005363;
+        text-underline-offset: 3px;
+      }
+      .tag {
+        display: inline-block;
+        padding: 3px 8px;
+        border: 1px solid #a9cbb5;
+        color: #216a43;
+        background: #eaf6ee;
+        font-size: 13px;
+        font-weight: 600;
+        border-radius: 4px;
+        margin-bottom: 6px;
+      }
+      .pending {
+        border-color: #d9be7c;
+        color: #735100;
+        background: #fff6df;
+      }
+      ul {
+        padding-left: 22px;
+      }
+      li {
+        margin: 7px 0;
+      }
+      summary {
+        cursor: pointer;
+        font-weight: 600;
+        color: #005363;
+        padding: 8px 0;
+      }
+      code {
+        font-size: 13px;
+      }
+      @media (max-width: 760px) {
+        main {
+          padding: 0 16px;
+        }
+        .metrics {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .card {
+          padding: 16px;
+        }
+        table {
+          table-layout: auto;
+          min-width: 660px;
+        }
+      }
+      @media print {
+        body {
+          background: white;
+        }
+        main {
+          max-width: none;
+          margin: 0;
+        }
+        .card {
+          break-inside: avoid;
+        }
+        a {
+          color: inherit;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="kicker">DEMO · FRONTEND · 05.11.2026</p>
+        <h1>Design und Bedienung geprüft</h1>
+        <p>
+          Klare Aufgaben, technische Listen, erkennbare Aktionen und
+          Rückmeldungen am richtigen Ort.
+        </p>
+      </header>
+      <div class="metrics">
+        <div>
+          <strong>166</strong
+          ><span>Seiten- und Reiterzustände je Desktop/Tablet</span>
+        </div>
+        <div>
+          <strong>106</strong
+          ><span>Routen mit vermessenen Aktionen je Bildschirmgröße</span>
+        </div>
+        <div>
+          <strong>491</strong
+          ><span
+            >Aktionen je Bildschirmgröße, wiederholte Zeilen mitgezählt</span
+          >
+        </div>
+        <div>
+          <strong>10</strong
+          ><span>eindeutige Verbesserungspunkte umgesetzt</span>
+        </div>
+      </div>
+      <section class="card">
+        <h2>01 · Umgesetzt</h2>
+        <p class="muted">
+          Die Änderungen betreffen die Demo-Oberfläche. Staging, Produktion und
+          Backend wurden nicht aktualisiert.
+        </p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Bereich</th>
+                <th>Gefunden</th>
+                <th>Geändert</th>
+                <th>Demo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Aktionen in Listen</strong></td>
+                <td>
+                  Papierkorbtexte ragten aus schmalen Buttons; Einsatzzeilen
+                  waren unnötig hoch.
+                </td>
+                <td>
+                  Papierkorb-Symbol mit 44 × 44 px, eindeutiger Beschriftung
+                  beim Zeigen und für Vorlesesoftware. Details und Papierkorb
+                  stehen in Einsatzlisten nebeneinander. Bestätigung bleibt
+                  erhalten.
+                </td>
+                <td>
+                  <a
+                    href="https://muhammet-kose.github.io/HR4ME-demo/einsaetze"
+                    target="_blank"
+                    rel="noopener"
+                    >Ansehen ↗</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Meldungen bei Dokumenten</strong></td>
+                <td>
+                  Ergebnisse von Textübernahme, Vorschau und Speicherung waren
+                  teilweise nur oben sichtbar.
+                </td>
+                <td>
+                  Ladeanzeige, Fehler und Ergebnis erscheinen direkt an der
+                  Aktion. Freie Dokumente zeigen die dauerhafte Fehlermeldung
+                  unter den Formularaktionen, ohne den Button zu verschieben.
+                </td>
+                <td>
+                  <a
+                    href="https://muhammet-kose.github.io/HR4ME-demo/dokumentvorlagen?editor=frei"
+                    target="_blank"
+                    rel="noopener"
+                    >Ansehen ↗</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Softwarelogo</strong></td>
+                <td>Fehler wurden als normale Statusmeldung ausgegeben.</td>
+                <td>
+                  Fehler rot, Erfolg grün; Meldung direkt unter den Aktionen.
+                  Auswahl und dauerhaftes Speichern sind klar getrennt.
+                </td>
+                <td>
+                  <a
+                    href="https://muhammet-kose.github.io/HR4ME-demo/dokumente/logo"
+                    target="_blank"
+                    rel="noopener"
+                    >Ansehen ↗</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Berichte und Exporte</strong></td>
+                <td>
+                  Laufende Datei-Erstellung hatte keinen einheitlichen
+                  Ladeindikator am Auslöser.
+                </td>
+                <td>
+                  Ladeanzeige und konkretes Ergebnis am Excel- beziehungsweise
+                  PDF-Button.
+                </td>
+                <td>
+                  <a
+                    href="https://muhammet-kose.github.io/HR4ME-demo/berichte"
+                    target="_blank"
+                    rel="noopener"
+                    >Ansehen ↗</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Konditionen</strong></td>
+                <td>
+                  Validierungsfehler erschienen oben; die Bestätigung
+                  wiederholte lange Erläuterungen.
+                </td>
+                <td>
+                  Fehler und Erfolg an der Aktion; Bestätigung auf „Kondition
+                  gespeichert.“ gekürzt.
+                </td>
+                <td>
+                  <a
+                    href="https://muhammet-kose.github.io/HR4ME-demo/konditionen"
+                    target="_blank"
+                    rel="noopener"
+                    >Ansehen ↗</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td><strong>PDF-Prüfung</strong></td>
+                <td>„PDF ansehen“ war nur 21 px hoch.</td>
+                <td>Bedienhöhe von mindestens 44 px.</td>
+                <td>
+                  <a
+                    href="https://muhammet-kose.github.io/HR4ME-demo/monatsabrechnung/pruefung"
+                    target="_blank"
+                    rel="noopener"
+                    >Ansehen ↗</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Farben und Vorlesbarkeit</strong></td>
+                <td>
+                  Globale Rückmeldungen verwendeten feste helle Farben und ein
+                  ungeeignetes HTML-Element für Fehlermeldungen.
+                </td>
+                <td>
+                  Farben folgen der gewählten Darstellung. Fehler und Status
+                  besitzen passende Rollen; Kontrast für Rückmeldungen in Hell
+                  und Dunkel geprüft.
+                </td>
+                <td>
+                  <a
+                    href="https://muhammet-kose.github.io/HR4ME-demo/dokumentvorlagen?editor=frei"
+                    target="_blank"
+                    rel="noopener"
+                    >Ansehen ↗</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Lohnvorschau</strong></td>
+                <td>
+                  Die Hinweisbox ersetzte die Listenrolle; ihre Einträge wurden
+                  nicht korrekt als Liste erkannt.
+                </td>
+                <td>Hinweisbox und echte Liste sind getrennt ausgezeichnet.</td>
+                <td>
+                  <a
+                    href="https://muhammet-kose.github.io/HR4ME-demo/lohnvorschau"
+                    target="_blank"
+                    rel="noopener"
+                    >Ansehen ↗</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Seitenziel und Schrift</strong></td>
+                <td>
+                  „Auswertungen“ nannte keine konkrete Aufgabe; ein Hinweistext
+                  war zu klein.
+                </td>
+                <td>
+                  Titel „Mitarbeiterstunden auswerten“; kleine Formularhinweise
+                  nutzen die gemeinsame Metaschriftgröße.
+                </td>
+                <td>
+                  <a
+                    href="https://muhammet-kose.github.io/HR4ME-demo/auswertungen"
+                    target="_blank"
+                    rel="noopener"
+                    >Ansehen ↗</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Navigation und Beschriftung</strong></td>
+                <td>
+                  Rechnung und Bearbeitungsseiten zeigten abweichende oder
+                  allgemeine Breadcrumb-Titel. Ein Link aus der
+                  Teameinsatzanlage führte zu einer nicht vorhandenen Akte.
+                </td>
+                <td>
+                  Konsistente Aufgabentitel. Neue Teameinsätze verlinken zurück
+                  zur Einsatzliste; bestehende Teameinsatzakten erhalten ihre
+                  korrekten Pfade.
+                </td>
+                <td>
+                  <a
+                    href="https://muhammet-kose.github.io/HR4ME-demo/einsaetze/teams/neu"
+                    target="_blank"
+                    rel="noopener"
+                    >Ansehen ↗</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="card">
+        <h2>02 · Für die gemeinsame Überarbeitung festgehalten</h2>
+        <p class="muted">
+          Diese Punkte brauchen eine Entscheidung zum Ablauf. Die betreffenden
+          Funktionen wurden nicht entfernt oder neu erfunden.
+        </p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Priorität / Bereich</th>
+                <th>Was noch nicht klar ist</th>
+                <th>Nächster sinnvoller Schritt</th>
+                <th>Demo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span class="tag pending">Hoch</span><br /><strong
+                    >Rechnungserstellung</strong
+                  >
+                </td>
+                <td>
+                  Im aktiven Ablauf setzt „Rechnung erstellen“ einen
+                  abgeschlossenen Monat voraus. Der gewünschte manuelle Einstieg
+                  ohne hochgeladene Monatsstunden fehlt dort. Ein älterer
+                  manueller Editor ist im Quellcode vorhanden, aber nicht aktiv
+                  eingebunden.
+                </td>
+                <td>
+                  Gemeinsam auf genau zwei Einstiege festlegen: „Aus
+                  Monatsstunden“ und „Manuell“. Danach Kunde/Einsatz,
+                  Positionen, Prüfen und PDF. Diesen Ablauf hier noch nicht
+                  umgebaut.
+                </td>
+                <td>
+                  <a
+                    href="https://muhammet-kose.github.io/HR4ME-demo/abrechnung/neu"
+                    target="_blank"
+                    rel="noopener"
+                    >Ansehen ↗</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="tag pending">Hoch</span><br /><strong
+                    >Dokumente erstellen</strong
+                  >
+                </td>
+                <td>
+                  Mustervorlagen und eigene Vorlagen haben zwei getrennte
+                  Oberflächen. Der Wechsel zu eigenen Vorlagen liegt unter
+                  „Weitere eigene Vorlagen“; die Firmenangaben und
+                  Erstellschritte unterscheiden sich.
+                </td>
+                <td>
+                  Einen gemeinsamen Einstieg mit klarer Vorlagenauswahl und
+                  wenigen Schritten abstimmen. Die technischen Rückmeldungen
+                  sind verbessert; die beiden Abläufe bestehen weiter.
+                </td>
+                <td>
+                  <a
+                    href="https://muhammet-kose.github.io/HR4ME-demo/dokumentvorlagen"
+                    target="_blank"
+                    rel="noopener"
+                    >Ansehen ↗</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="tag pending">Mittel</span><br /><strong
+                    >Eigene Dateien als Vorlage</strong
+                  >
+                </td>
+                <td>
+                  Der freie Import übernimmt Text. Schriftarten, Tabellen und
+                  Seitenumbrüche des Originals werden dabei nicht vollständig
+                  übernommen; Scans brauchen separat eingegebenen Text. Die
+                  Oberfläche erklärt diese Grenze bereits.
+                </td>
+                <td>
+                  Festlegen, ob ein einheitlicher Briefaufbau genügt oder das
+                  Originaldesign einer Vorlage erhalten bleiben muss. Keine
+                  automatische Layoutübernahme ergänzt.
+                </td>
+                <td>
+                  <a
+                    href="https://muhammet-kose.github.io/HR4ME-demo/dokumentvorlagen?editor=frei"
+                    target="_blank"
+                    rel="noopener"
+                    >Ansehen ↗</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="tag pending">Mittel</span><br /><strong
+                    >Bezeichnungen im Monatsablauf</strong
+                  >
+                </td>
+                <td>
+                  „Gutschrift“, „Stundennachweis“ und „Monatsstunden“ werden für
+                  zusammenhängende Bereiche verwendet. Dadurch ist nicht immer
+                  sofort klar, welches Dokument beziehungsweise welcher
+                  Verarbeitungsschritt gemeint ist.
+                </td>
+                <td>
+                  Begriffe nach dem tatsächlichen Dokumenttyp und dem
+                  gewünschten Ablauf vereinheitlichen. Keine fachlichen Begriffe
+                  pauschal ersetzt.
+                </td>
+                <td>
+                  <a
+                    href="https://muhammet-kose.github.io/HR4ME-demo/monatsabrechnung/gutschriften"
+                    target="_blank"
+                    rel="noopener"
+                    >Ansehen ↗</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="card">
+        <h2>03 · Was geprüft wurde</h2>
+        <ul>
+          <li>
+            Spalten, Listen, Kacheln, Abstände, Seitenüberschriften und kleinere
+            Hinweise.
+          </li>
+          <li>
+            Sichtbarkeit, Bediengrößen und überlaufende Beschriftungen in
+            Büroansichten und Mitarbeiterportal.
+          </li>
+          <li>
+            Erfasste Unterseiten mit Beispielakten auf Desktop (1440 px) und
+            Tablet (768 px); wichtige Abläufe zusätzlich bei 390 px.
+          </li>
+          <li>
+            Textübernahme aus Word/PDF, sieben Mustervorlagen, PDF-Vorschau,
+            Ablage, Archiv und gespeicherte Vorlagenversionen.
+          </li>
+          <li>
+            Monatsstunden, AZK-Aufteilung, Muster-LODAS, Exportmeldungen, Logo
+            und Rechnungsansichten.
+          </li>
+          <li>
+            Reiterwechsel, Tastaturbedienung, Hell-/Dunkel-Kontrast der
+            Rückmeldungen und ausgewählte Safari/WebKit-Abläufe.
+          </li>
+        </ul>
+        <p class="muted">
+          Die Prüfung umfasst die vorgefundenen Demorouten und wichtige
+          Bearbeitungszustände. Sie weist nicht jede denkbare Daten-, Rollen-
+          oder Fehlerkombination nach. Dokumentseiten im Druckformat behalten
+          ihre eigene Typografie.
+        </p>
+      </section>
+      <section class="card">
+        <h2>04 · Prüfergebnisse und ältere Tests</h2>
+        <ul>
+          <li>Die gezielten Unit-Prüfungen umfassen 118 bestandene Tests.</li>
+          <li>
+            Die breite Aktions- und Designkontrolle umfasst 20 bestandene
+            Browserprüfungen auf Desktop/Tablet.
+          </li>
+          <li>
+            Die gefundenen kompakten Einsatzlisten wurden mit 7 und 30 Personen
+            auf Desktop, Tablet und schmaler Ansicht erneut geprüft.
+          </li>
+          <li>
+            Die Safari/WebKit-Prüfung umfasst Meldungen, Listendarstellung und
+            stabile Reiterwechsel. Der dabei gefundene Formularsprung wurde
+            durch die Meldungsposition unter den Aktionen behoben.
+          </li>
+        </ul>
+        <details>
+          <summary>Einordnung älterer fehlgeschlagener Prüffälle</summary>
+          <p>
+            Ein zusätzliches älteres Paket mit 50 Prüffällen meldete zunächst 26
+            Erfolge und 24 Fehlschläge. Vier davon betrafen die tatsächlich zu
+            hohen Einsatzzeilen; diese Layoutfälle wurden korrigiert und erneut
+            erfolgreich geprüft. Die übrigen 20 Ausführungen enthalten veraltete
+            Erwartungen oder zu breite Selektoren, zum Beispiel:
+          </p>
+          <ul>
+            <li>
+              den ausdrücklich entfernten globalen Button „Eintrag löschen“;
+            </li>
+            <li>
+              die entfernte Ansicht „Entgeltsätze“ und „Zuordnung &amp;
+              Reihenfolge“;
+            </li>
+            <li>
+              eine automatische Personalnummer, ohne die heute erforderliche
+              eigene Nummer einzutragen;
+            </li>
+            <li>eine Bewerberübernahme ohne ausgefüllte Pflichtangaben;</li>
+            <li>
+              eine alte AZK-Oberfläche beziehungsweise einen Selektor, der auch
+              ein verborgenes Korrekturfeld erfasst;
+            </li>
+            <li>
+              eine nicht vorhandene statt einer sichtbar gesperrten
+              Logo-Dateiauswahl im Lesemodus;
+            </li>
+            <li>frühere Pixelvorgaben für Auswahlfelder.</li>
+          </ul>
+          <p>
+            Diese Altfälle wurden nicht als bestätigte neue Produktfehler
+            gezählt. Die entfernten Funktionen wurden nicht wieder eingeführt.
+            Ein vollständig bereinigter Gesamttestbestand ist mit dieser
+            Designprüfung nicht abgeschlossen.
+          </p>
+        </details>
+      </section>
+      <section class="card">
+        <details>
+          <summary>05 · Erfasste Seiten- und Reiterzustände (166)</summary>
+          <p class="muted">
+            Ein Eintrag bezeichnet einen geprüften Zustand. Reiter,
+            Weiterleitungen und Beispielakten können dieselbe Grundseite
+            mehrfach abbilden.
+          </p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Pfad / Ansicht</th>
+                  <th>Überschrift</th>
+                  <th>Erfasste Bedienelemente</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>/</td>
+                  <td>Dashboard</td>
+                  <td>60</td>
+                </tr>
+                <tr>
+                  <td>/mitarbeitende</td>
+                  <td>Mitarbeitende</td>
+                  <td>68</td>
+                </tr>
+                <tr>
+                  <td>/mitarbeitende :: Mitarbeitende</td>
+                  <td>Mitarbeitende</td>
+                  <td>68</td>
+                </tr>
+                <tr>
+                  <td>/mitarbeitende?mode=applicants</td>
+                  <td>Mitarbeitende</td>
+                  <td>68</td>
+                </tr>
+                <tr>
+                  <td>/mitarbeitende/neu</td>
+                  <td>Neuen Mitarbeiter anlegen</td>
+                  <td>25</td>
+                </tr>
+                <tr>
+                  <td>/mitarbeitende/bewerbende/neu</td>
+                  <td>Neuen Bewerber anlegen</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>/mitarbeitende/employee-1/uebersicht</td>
+                  <td>Mira Adler</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>/mitarbeitende/employee-1/persoenliche-daten</td>
+                  <td>Mira Adler</td>
+                  <td>14</td>
+                </tr>
+                <tr>
+                  <td>/mitarbeitende/employee-1/beschaeftigung</td>
+                  <td>Mira Adler</td>
+                  <td>37</td>
+                </tr>
+                <tr>
+                  <td>/mitarbeitende/employee-1/personalnummern</td>
+                  <td>Mira Adler</td>
+                  <td>17</td>
+                </tr>
+                <tr>
+                  <td>/mitarbeitende/employee-1/geschuetzte-daten</td>
+                  <td>Mira Adler</td>
+                  <td>22</td>
+                </tr>
+                <tr>
+                  <td>/mitarbeitende/employee-1/einsaetze</td>
+                  <td>Mira Adler</td>
+                  <td>16</td>
+                </tr>
+                <tr>
+                  <td>/mitarbeitende/employee-1/zeiten-azk</td>
+                  <td>Mira Adler</td>
+                  <td>16</td>
+                </tr>
+                <tr>
+                  <td>/mitarbeitende/employee-1/urlaub-abwesenheit</td>
+                  <td>Mira Adler</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>/mitarbeitende/employee-1/vorschuesse</td>
+                  <td>Mira Adler</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>/mitarbeitende/employee-1/unterkunft</td>
+                  <td>Mira Adler</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>/mitarbeitende/employee-1/dokumente</td>
+                  <td>Mira Adler</td>
+                  <td>14</td>
+                </tr>
+                <tr>
+                  <td>/mitarbeitende/employee-1/unterweisungen</td>
+                  <td>Mira Adler</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td>/mitarbeitende/employee-1/historie</td>
+                  <td>Mira Adler</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>/unternehmen</td>
+                  <td>Unternehmen</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>/unternehmen/neu</td>
+                  <td>Neue Firma erfassen</td>
+                  <td>26</td>
+                </tr>
+                <tr>
+                  <td>/unternehmen/company-1/bearbeiten</td>
+                  <td>Firma bearbeiten</td>
+                  <td>27</td>
+                </tr>
+                <tr>
+                  <td>/unternehmen/company-1/uebersicht</td>
+                  <td>Nordstern Logistik GmbH</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>/unternehmen/company-1/kontakte</td>
+                  <td>Nordstern Logistik GmbH</td>
+                  <td>16</td>
+                </tr>
+                <tr>
+                  <td>/unternehmen/company-1/standorte</td>
+                  <td>Nordstern Logistik GmbH</td>
+                  <td>17</td>
+                </tr>
+                <tr>
+                  <td>/unternehmen/company-1/konditionen</td>
+                  <td>Nordstern Logistik GmbH</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td>/unternehmen/company-1/projekte</td>
+                  <td>Nordstern Logistik GmbH</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td>/unternehmen/company-1/einsaetze</td>
+                  <td>Nordstern Logistik GmbH</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>/unternehmen/company-1/rechnungen</td>
+                  <td>Nordstern Logistik GmbH</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>/unternehmen/company-1/dokumente</td>
+                  <td>Nordstern Logistik GmbH</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td>/unternehmen/company-1/erinnerungen</td>
+                  <td>Nordstern Logistik GmbH</td>
+                  <td>16</td>
+                </tr>
+                <tr>
+                  <td>/unternehmen/company-1/historie</td>
+                  <td>Nordstern Logistik GmbH</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>/unternehmen/company-1/kontakte/neu</td>
+                  <td>Kontakt hinzufügen</td>
+                  <td>14</td>
+                </tr>
+                <tr>
+                  <td>/unternehmen/company-1/standorte/neu</td>
+                  <td>Einsatzort hinzufügen</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>/einsaetze</td>
+                  <td>Einsätze</td>
+                  <td>25</td>
+                </tr>
+                <tr>
+                  <td>/einsaetze/neu</td>
+                  <td>Neuen Einsatz anlegen</td>
+                  <td>42</td>
+                </tr>
+                <tr>
+                  <td>/einsaetze/assignment-1/bearbeiten</td>
+                  <td>Einsatz bearbeiten</td>
+                  <td>44</td>
+                </tr>
+                <tr>
+                  <td>/einsaetze/assignment-1/uebersicht</td>
+                  <td>E-0001</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td>/einsaetze/assignment-1/konditionen</td>
+                  <td>E-0001</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>/einsaetze/assignment-1/ausstattung</td>
+                  <td>E-0001</td>
+                  <td>14</td>
+                </tr>
+                <tr>
+                  <td>/einsaetze/assignment-1/vertrag-dokumente</td>
+                  <td>E-0001</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>/einsaetze/assignment-1/historie</td>
+                  <td>E-0001</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>/auftragsmappen</td>
+                  <td>Auftragsmappen</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>/auftragsmappen/neu</td>
+                  <td>Neue Auftragsmappe anlegen</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td>/auftragsmappen/assignment-folder-1/uebersicht</td>
+                  <td>Fiktive Nordlogistik</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>
+                    /auftragsmappen/assignment-folder-1/uebersicht :: Übersicht
+                  </td>
+                  <td>Fiktive Nordlogistik</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>/auftragsmappen/assignment-folder-1/einsaetze</td>
+                  <td>Fiktive Nordlogistik</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>/auftragsmappen/assignment-folder-1/projekte</td>
+                  <td>Fiktive Nordlogistik</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>/auftragsmappen/assignment-folder-1/historie</td>
+                  <td>Fiktive Nordlogistik</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>/aue-cockpit</td>
+                  <td>AÜ-Cockpit</td>
+                  <td>39</td>
+                </tr>
+                <tr>
+                  <td>/aue-cockpit/regeln</td>
+                  <td>AÜ-Regeln konfigurieren</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>/aue-cockpit/assignment-1/uebersicht</td>
+                  <td>AÜ-Nachweis E-0001</td>
+                  <td>16</td>
+                </tr>
+                <tr>
+                  <td>/aue-cockpit/assignment-1/uebersicht :: Übersicht</td>
+                  <td>AÜ-Nachweis E-0001</td>
+                  <td>16</td>
+                </tr>
+                <tr>
+                  <td>/aue-cockpit/assignment-1/nachweise</td>
+                  <td>AÜ-Nachweis E-0001</td>
+                  <td>16</td>
+                </tr>
+                <tr>
+                  <td>/projekte</td>
+                  <td>Personalsuche</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>/projekte/neu</td>
+                  <td>Neue Personalsuche anlegen</td>
+                  <td>16</td>
+                </tr>
+                <tr>
+                  <td>/projekte/project-1/uebersicht</td>
+                  <td>Lagerhelfer (m/w/d) im Nordlager</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>/projekte/project-1/bewerbende</td>
+                  <td>Lagerhelfer (m/w/d) im Nordlager</td>
+                  <td>14</td>
+                </tr>
+                <tr>
+                  <td>/projekte/project-1/stellenangebote</td>
+                  <td>Lagerhelfer (m/w/d) im Nordlager</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>/projekte/project-1/dokumente</td>
+                  <td>Lagerhelfer (m/w/d) im Nordlager</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>/projekte/project-1/wiedervorlagen</td>
+                  <td>Lagerhelfer (m/w/d) im Nordlager</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>/projekte/project-1/historie</td>
+                  <td>Lagerhelfer (m/w/d) im Nordlager</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>/stellenangebote</td>
+                  <td>Stellenangebote</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>/stellenangebote/neu</td>
+                  <td>Neues Stellenangebot anlegen</td>
+                  <td>37</td>
+                </tr>
+                <tr>
+                  <td>/stellenangebote/job-offer-1/uebersicht</td>
+                  <td>Lagerlogistik im Nordlager</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>/stellenangebote/job-offer-1/anzeigentext</td>
+                  <td>Lagerlogistik im Nordlager</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>/konditionen</td>
+                  <td>Konditionen</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>/monatsabrechnung/gutschriften</td>
+                  <td>Gutschrift hochladen</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>/monatsabrechnung/gutschriften/importe/beispiel-kw43</td>
+                  <td>Gutschrift prüfen</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>/monatsabrechnung/pruefung</td>
+                  <td>Gutschrift prüfen</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>/monatsabrechnung/monatswerte</td>
+                  <td>Monatswerte</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>/azk</td>
+                  <td>AZK und Auszahlung festlegen</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>/zahlungen</td>
+                  <td>Vorschüsse</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>/monatsuebersicht</td>
+                  <td>Monatsübersicht</td>
+                  <td>24</td>
+                </tr>
+                <tr>
+                  <td>/monatsuebersicht :: Stunden</td>
+                  <td>Monatsübersicht</td>
+                  <td>24</td>
+                </tr>
+                <tr>
+                  <td>/monatsuebersicht :: Stundenvergleich</td>
+                  <td>Monatsübersicht</td>
+                  <td>14</td>
+                </tr>
+                <tr>
+                  <td>/monatsuebersicht :: Tagesübersicht &amp; Einsätze</td>
+                  <td>Monatsübersicht</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>/lohnvorschau</td>
+                  <td>Lohnvorschau</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>/abrechnung</td>
+                  <td>Rechnungen</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td>/abrechnung :: Rechnungen</td>
+                  <td>Rechnungen</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td>/abrechnung?view=statuses</td>
+                  <td>Rechnungen</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td>/abrechnung/neu</td>
+                  <td>Rechnung erstellen</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>/mahnwesen</td>
+                  <td>Mahnwesen</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>/mahnwesen?view=create</td>
+                  <td>Mahnwesen</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td>/mahnwesen?view=history</td>
+                  <td>Mahnwesen</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>/berichte</td>
+                  <td>Berichte und Exporte</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>/auswertungen</td>
+                  <td>Mitarbeiterstunden auswerten</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>/auswertungen :: Jahresmatrix</td>
+                  <td>Mitarbeiterstunden auswerten</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>/auswertungen :: Einsatzverlauf</td>
+                  <td>Mitarbeiterstunden auswerten</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>/auswertungen :: Monatsvergleich</td>
+                  <td>Mitarbeiterstunden auswerten</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>/auswertungen :: Monatsstunden</td>
+                  <td>Mitarbeiterstunden auswerten</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>/dokumente</td>
+                  <td>Dokumente</td>
+                  <td>28</td>
+                </tr>
+                <tr>
+                  <td>/dokumente :: Dokumente</td>
+                  <td>Dokumente</td>
+                  <td>28</td>
+                </tr>
+                <tr>
+                  <td>/benutzerverwaltung</td>
+                  <td>Benutzerverwaltung</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>/benutzerverwaltung/buero/neu</td>
+                  <td>Bürokonto anlegen</td>
+                  <td>14</td>
+                </tr>
+                <tr>
+                  <td>/benutzerverwaltung/lager/neu</td>
+                  <td>Lagerkonto anlegen</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>/abwesenheitskonfiguration/richtlinien</td>
+                  <td>Abwesenheitskonfiguration</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>/administration/datev</td>
+                  <td>DATEV LODAS verwalten</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>
+                    /abwesenheitskonfiguration/richtlinien/feiertagskalender
+                  </td>
+                  <td>Abwesenheitskonfiguration</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>/abwesenheitskonfiguration/richtlinien/zuordnungen</td>
+                  <td>Abwesenheitskonfiguration</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>/mitarbeitende/employee-1/bearbeiten</td>
+                  <td>Stammdaten bearbeiten</td>
+                  <td>32</td>
+                </tr>
+                <tr>
+                  <td>/mitarbeitende/bewerbende/applicant-1/uebersicht</td>
+                  <td>Nele Fischer</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>
+                    /mitarbeitende/bewerbende/applicant-1/persoenliche-daten
+                  </td>
+                  <td>Nele Fischer</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>/mitarbeitende/bewerbende/applicant-1/status</td>
+                  <td>Nele Fischer</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>/mitarbeitende/bewerbende/applicant-1/dokumente</td>
+                  <td>Nele Fischer</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>/mitarbeitende/bewerbende/applicant-1/historie</td>
+                  <td>Nele Fischer</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>/dokumentvorlagen</td>
+                  <td>Vorlagen &amp; Schreiben</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>/dokumentvorlagen?view=settings</td>
+                  <td>Vorlagen &amp; Schreiben</td>
+                  <td>19</td>
+                </tr>
+                <tr>
+                  <td>/dokumentvorlagen?view=generated</td>
+                  <td>Vorlagen &amp; Schreiben</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>/dokumentvorlagen?editor=frei</td>
+                  <td>Vorlagen &amp; Schreiben</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>/dokumentvorlagen?editor=frei&amp;view=create</td>
+                  <td>Vorlagen &amp; Schreiben</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>/dokumentvorlagen?editor=frei&amp;view=generated</td>
+                  <td>Vorlagen &amp; Schreiben</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>/dokumente/logo</td>
+                  <td>Softwarelogo</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>/dokumente#instructions</td>
+                  <td>Dokumente</td>
+                  <td>28</td>
+                </tr>
+                <tr>
+                  <td>/papierkorb</td>
+                  <td>Papierkorb</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>/abwesenheiten</td>
+                  <td>Abwesenheiten</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>/arbeitseinweisungen</td>
+                  <td>Arbeitseinweisungen</td>
+                  <td>22</td>
+                </tr>
+                <tr>
+                  <td>/administration/datev/personalnummern</td>
+                  <td>DATEV LODAS verwalten</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>/administration/datev/lohnarten</td>
+                  <td>DATEV LODAS verwalten</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>/administration/datev/kostenstellen</td>
+                  <td>DATEV LODAS verwalten</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>/administration/datev/rechnungswesen</td>
+                  <td>DATEV LODAS verwalten</td>
+                  <td>30</td>
+                </tr>
+                <tr>
+                  <td>/administration/datev/datenverantwortung</td>
+                  <td>DATEV LODAS verwalten</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>/einsaetze/teams/neu</td>
+                  <td>Neuen Einsatz anlegen</td>
+                  <td>45</td>
+                </tr>
+                <tr>
+                  <td>/projekte/project-1/bearbeiten</td>
+                  <td>Personalsuche bearbeiten</td>
+                  <td>17</td>
+                </tr>
+                <tr>
+                  <td>/stellenangebote/job-offer-1/bearbeiten</td>
+                  <td>Stellenangebot bearbeiten</td>
+                  <td>38</td>
+                </tr>
+                <tr>
+                  <td>/benutzerverwaltung?view=memberships</td>
+                  <td>Benutzerverwaltung</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>/monatsabrechnung/gutschriften?month=2026-10</td>
+                  <td>Gutschrift hochladen</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>/monatsabrechnung/monatswerte?month=2026-10</td>
+                  <td>Monatswerte</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>/azk?month=2026-10</td>
+                  <td>AZK und Auszahlung festlegen</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>
+                    /einstellungen/integrationen/bundesagentur-fuer-arbeit
+                  </td>
+                  <td>Bundesagentur für Arbeit</td>
+                  <td>14</td>
+                </tr>
+                <tr>
+                  <td>/#office-leave</td>
+                  <td>Dashboard</td>
+                  <td>60</td>
+                </tr>
+                <tr>
+                  <td>/#office-sickness</td>
+                  <td>Dashboard</td>
+                  <td>60</td>
+                </tr>
+                <tr>
+                  <td>/#office-operations</td>
+                  <td>Dashboard</td>
+                  <td>60</td>
+                </tr>
+                <tr>
+                  <td>/dokumentvorlagen?view=create</td>
+                  <td>Vorlagen &amp; Schreiben</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>/dokumente#employee-file-title</td>
+                  <td>Dokumente</td>
+                  <td>28</td>
+                </tr>
+                <tr>
+                  <td>/dokumente#instructions-title</td>
+                  <td>Dokumente</td>
+                  <td>14</td>
+                </tr>
+                <tr>
+                  <td>/unternehmen/company-1/kontakte/contact-1/uebersicht</td>
+                  <td>Alina Behrens</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>/unternehmen/company-1/standorte/site-1</td>
+                  <td>Nordlager</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>/unternehmen/company-1/standorte/site-2</td>
+                  <td>Südhof</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>/konditionen?view=surcharges</td>
+                  <td>Konditionen</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>/monatsabrechnung</td>
+                  <td>Gutschrift hochladen</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>
+                    /monatsabrechnung/gutschriften/importe/beispiel-kw44?month=2026-10
+                  </td>
+                  <td>Gutschrift prüfen</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>
+                    /monatsabrechnung/gutschriften/papierkorb?month=2026-10
+                  </td>
+                  <td>Papierkorb</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>
+                    /monatsabrechnung/gutschriften/importe/beispiel-kw43?month=2026-10
+                  </td>
+                  <td>Gutschrift prüfen</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>
+                    /monatsabrechnung/gutschriften/importe/beispiel-kw42?month=2026-10
+                  </td>
+                  <td>Gutschrift prüfen</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>/monatsabrechnung/monatswerte?month=2026-11</td>
+                  <td>Monatswerte</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>/benutzerverwaltung/mitgliedschaften</td>
+                  <td>Mitgliederverwaltung</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>/benutzerverwaltung/demo-account-readonly</td>
+                  <td>Demo Lesekonto</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td>/benutzerverwaltung/demo-account-consulting</td>
+                  <td>Deniz Nord</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td>/benutzerverwaltung/demo-account-payroll</td>
+                  <td>Felix Wiese</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td>/benutzerverwaltung/demo-account-employee-b</td>
+                  <td>Jonas Berg</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>/benutzerverwaltung/demo-account-admin</td>
+                  <td>Klara Morgen</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td>/benutzerverwaltung/demo-account-employee-a</td>
+                  <td>Mira Adler</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>/mitarbeitende/bewerbende/applicant-1/bearbeiten</td>
+                  <td>Bewerber bearbeiten</td>
+                  <td>29</td>
+                </tr>
+                <tr>
+                  <td>/administration/datev/rechnungswesen?view=aussteller</td>
+                  <td>DATEV LODAS verwalten</td>
+                  <td>30</td>
+                </tr>
+                <tr>
+                  <td>
+                    /administration/datev/rechnungswesen?view=konfiguration
+                  </td>
+                  <td>DATEV LODAS verwalten</td>
+                  <td>14</td>
+                </tr>
+                <tr>
+                  <td>/administration/datev/rechnungswesen?view=export</td>
+                  <td>DATEV LODAS verwalten</td>
+                  <td>14</td>
+                </tr>
+                <tr>
+                  <td>/unternehmen/company-1/kontakte/contact-1/bearbeiten</td>
+                  <td>Kontakt bearbeiten</td>
+                  <td>14</td>
+                </tr>
+                <tr>
+                  <td>/unternehmen/company-1/standorte/site-1/bearbeiten</td>
+                  <td>Einsatzort bearbeiten</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td>/unternehmen/company-1/standorte/site-2/bearbeiten</td>
+                  <td>Einsatzort bearbeiten</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td>/monatsabrechnung/gutschriften?month=2026-11</td>
+                  <td>Gutschrift hochladen</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>/monatsabrechnung/pruefung?month=2026-11</td>
+                  <td>Gutschrift prüfen</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>/benutzerverwaltung/mitgliedschaften/buero/neu</td>
+                  <td>Büromitglied einladen</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>/benutzerverwaltung/mitgliedschaften/lager/neu</td>
+                  <td>Portalmitglied einladen</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>
+                    /benutzerverwaltung/mitgliedschaften/membership-demo-admin
+                  </td>
+                  <td>Demo Administration</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>
+                    /monatsabrechnung/gutschriften/papierkorb?month=2026-11
+                  </td>
+                  <td>Papierkorb</td>
+                  <td>6</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+      </section>
+    </main>
+  </body>
+</html>
