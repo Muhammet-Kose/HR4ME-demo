@@ -53,6 +53,8 @@ Der Monatsabschluss bleibt davon getrennt: Tagesstunden des Monats sammeln → M
 
 Die Wochenrechnung und ihr PDF sind Demo-Belege. Es erfolgt kein Versand.
 
-[Vorschüsse öffnen](https://muhammet-kose.github.io/HR4ME-demo/zahlungen/) · [Vorschuss anlegen](https://muhammet-kose.github.io/HR4ME-demo/zahlungen/neu/)
+[Lohn & Vorschüsse öffnen](https://muhammet-kose.github.io/HR4ME-demo/lohnvorschau/) · [Vorschuss anlegen](https://muhammet-kose.github.io/HR4ME-demo/lohnvorschau/vorschuss-anlegen/)
 
 „Vorschuss anlegen“ öffnet eine eigene Seite mit dem Formular. Nach erfolgreichem Speichern erscheint die Bestätigung in der Vorschussliste.
+
+Unter „Lohn & Vorschüsse“ stehen die beiden Ansichten nebeneinander: links „Lohnvorschau“, rechts [„Vorschüsse“](https://muhammet-kose.github.io/HR4ME-demo/lohnvorschau/?view=advances). Reiterwechsel erhalten die Position und ungespeicherte Eingaben.
