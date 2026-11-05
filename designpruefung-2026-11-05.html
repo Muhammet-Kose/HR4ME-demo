@@ -174,7 +174,10 @@
       <div class="metrics">
         <div>
           <strong>166</strong
-          ><span>Seiten- und Reiterzustände je Desktop/Tablet</span>
+          ><span
+            >Seiten- und Reiterzustände der Ausgangsprüfung je
+            Desktop/Tablet</span
+          >
         </div>
         <div>
           <strong>106</strong
@@ -187,7 +190,7 @@
           >
         </div>
         <div>
-          <strong>10</strong
+          <strong>12</strong>
           ><span>eindeutige Verbesserungspunkte umgesetzt</span>
         </div>
       </div>
@@ -392,6 +395,47 @@
                   >
                 </td>
               </tr>
+              <tr>
+                <td><strong>Manuelle Rechnungen</strong></td>
+                <td>Ein aktiver Einstieg ohne abgeschlossenen Monat fehlte.</td>
+                <td>
+                  Eigene Seite mit Kunde, Einsatz, Einsatzort, Monat,
+                  Rechnungsgrund und Leistungspositionen. Speicherung,
+                  automatische Summen und Muster-PDF. Zwei Einstiege: aus
+                  Monatsstunden oder manuell. Der ungenutzte alte manuelle
+                  Editor wurde entfernt.
+                </td>
+                <td>
+                  <a
+                    href="https://muhammet-kose.github.io/HR4ME-demo/abrechnung/neu?art=manuell"
+                    target="_blank"
+                    rel="noopener"
+                    >Ansehen ↗</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Eindeutige Bezeichnungen</strong></td>
+                <td>
+                  Hochgeladene Einzelzeiten wurden auch als „Gutschriften“
+                  bezeichnet.
+                </td>
+                <td>
+                  „Stundennachweis“ bezeichnet die PDF mit Einzelzeiten.
+                  „Monatsstunden“ bezeichnet die Zusammenfassung je Mitarbeiter
+                  und Monat. Navigation, Suche, Meldungen und Papierkorb wurden
+                  angepasst. Buchungsgutschriften für Urlaub und Krankheit
+                  behalten ihre fachliche Bedeutung.
+                </td>
+                <td>
+                  <a
+                    href="https://muhammet-kose.github.io/HR4ME-demo/monatsabrechnung/gutschriften"
+                    target="_blank"
+                    rel="noopener"
+                    >Ansehen ↗</a
+                  >
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -399,8 +443,9 @@
       <section class="card">
         <h2>02 · Für die gemeinsame Überarbeitung festgehalten</h2>
         <p class="muted">
-          Diese Punkte brauchen eine Entscheidung zum Ablauf. Die betreffenden
-          Funktionen wurden nicht entfernt oder neu erfunden.
+          Dokumenterstellung und Original-Layout beim Vorlagenimport bleiben für
+          die gemeinsame Überarbeitung offen. Der manuelle Rechnungseinstieg und
+          die Bezeichnungen wurden anschließend umgesetzt.
         </p>
         <div class="table-wrap">
           <table>
@@ -413,34 +458,6 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>
-                  <span class="tag pending">Hoch</span><br /><strong
-                    >Rechnungserstellung</strong
-                  >
-                </td>
-                <td>
-                  Im aktiven Ablauf setzt „Rechnung erstellen“ einen
-                  abgeschlossenen Monat voraus. Der gewünschte manuelle Einstieg
-                  ohne hochgeladene Monatsstunden fehlt dort. Ein älterer
-                  manueller Editor ist im Quellcode vorhanden, aber nicht aktiv
-                  eingebunden.
-                </td>
-                <td>
-                  Gemeinsam auf genau zwei Einstiege festlegen: „Aus
-                  Monatsstunden“ und „Manuell“. Danach Kunde/Einsatz,
-                  Positionen, Prüfen und PDF. Diesen Ablauf hier noch nicht
-                  umgebaut.
-                </td>
-                <td>
-                  <a
-                    href="https://muhammet-kose.github.io/HR4ME-demo/abrechnung/neu"
-                    target="_blank"
-                    rel="noopener"
-                    >Ansehen ↗</a
-                  >
-                </td>
-              </tr>
               <tr>
                 <td>
                   <span class="tag pending">Hoch</span><br /><strong
@@ -487,32 +504,6 @@
                 <td>
                   <a
                     href="https://muhammet-kose.github.io/HR4ME-demo/dokumentvorlagen?editor=frei"
-                    target="_blank"
-                    rel="noopener"
-                    >Ansehen ↗</a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="tag pending">Mittel</span><br /><strong
-                    >Bezeichnungen im Monatsablauf</strong
-                  >
-                </td>
-                <td>
-                  „Gutschrift“, „Stundennachweis“ und „Monatsstunden“ werden für
-                  zusammenhängende Bereiche verwendet. Dadurch ist nicht immer
-                  sofort klar, welches Dokument beziehungsweise welcher
-                  Verarbeitungsschritt gemeint ist.
-                </td>
-                <td>
-                  Begriffe nach dem tatsächlichen Dokumenttyp und dem
-                  gewünschten Ablauf vereinheitlichen. Keine fachlichen Begriffe
-                  pauschal ersetzt.
-                </td>
-                <td>
-                  <a
-                    href="https://muhammet-kose.github.io/HR4ME-demo/monatsabrechnung/gutschriften"
                     target="_blank"
                     rel="noopener"
                     >Ansehen ↗</a
@@ -978,17 +969,17 @@
                 </tr>
                 <tr>
                   <td>/monatsabrechnung/gutschriften/importe/beispiel-kw43</td>
-                  <td>Gutschrift prüfen</td>
+                  <td>Stundennachweis prüfen</td>
                   <td>18</td>
                 </tr>
                 <tr>
                   <td>/monatsabrechnung/pruefung</td>
-                  <td>Gutschrift prüfen</td>
+                  <td>Stundennachweis prüfen</td>
                   <td>18</td>
                 </tr>
                 <tr>
                   <td>/monatsabrechnung/monatswerte</td>
-                  <td>Monatswerte</td>
+                  <td>Monatsstunden</td>
                   <td>9</td>
                 </tr>
                 <tr>
@@ -1277,7 +1268,7 @@
                 </tr>
                 <tr>
                   <td>/monatsabrechnung/monatswerte?month=2026-10</td>
-                  <td>Monatswerte</td>
+                  <td>Monatsstunden</td>
                   <td>9</td>
                 </tr>
                 <tr>
@@ -1351,7 +1342,7 @@
                   <td>
                     /monatsabrechnung/gutschriften/importe/beispiel-kw44?month=2026-10
                   </td>
-                  <td>Gutschrift prüfen</td>
+                  <td>Stundennachweis prüfen</td>
                   <td>18</td>
                 </tr>
                 <tr>
@@ -1365,19 +1356,19 @@
                   <td>
                     /monatsabrechnung/gutschriften/importe/beispiel-kw43?month=2026-10
                   </td>
-                  <td>Gutschrift prüfen</td>
+                  <td>Stundennachweis prüfen</td>
                   <td>18</td>
                 </tr>
                 <tr>
                   <td>
                     /monatsabrechnung/gutschriften/importe/beispiel-kw42?month=2026-10
                   </td>
-                  <td>Gutschrift prüfen</td>
+                  <td>Stundennachweis prüfen</td>
                   <td>12</td>
                 </tr>
                 <tr>
                   <td>/monatsabrechnung/monatswerte?month=2026-11</td>
-                  <td>Monatswerte</td>
+                  <td>Monatsstunden</td>
                   <td>8</td>
                 </tr>
                 <tr>
@@ -1459,7 +1450,7 @@
                 </tr>
                 <tr>
                   <td>/monatsabrechnung/pruefung?month=2026-11</td>
-                  <td>Gutschrift prüfen</td>
+                  <td>Stundennachweis prüfen</td>
                   <td>5</td>
                 </tr>
                 <tr>

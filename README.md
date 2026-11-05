@@ -20,11 +20,11 @@ Diese Linkliste in Safari öffnen; die folgenden Seiten bleiben dann in Safari.
 1. [Dashboard](https://muhammet-kose.github.io/HR4ME-demo/)
 2. [Arbeitszeitkonto – AZK](https://muhammet-kose.github.io/HR4ME-demo/azk)
 3. [AZK und Lohnvorbereitung abschließen](https://muhammet-kose.github.io/HR4ME-demo/azk#azk-closing-title)
-4. [PDF hochladen und Gutschriften](https://muhammet-kose.github.io/HR4ME-demo/monatsabrechnung/gutschriften)
+4. [PDF hochladen und Stundennachweise](https://muhammet-kose.github.io/HR4ME-demo/monatsabrechnung/gutschriften)
 5. [Stunden prüfen](https://muhammet-kose.github.io/HR4ME-demo/monatsabrechnung/pruefung)
-6. [Monatswerte](https://muhammet-kose.github.io/HR4ME-demo/monatsabrechnung/monatswerte)
+6. [Monatsstunden](https://muhammet-kose.github.io/HR4ME-demo/monatsabrechnung/monatswerte)
 7. [Rechnungen – Rechnung mit „Prüfen“ öffnen](https://muhammet-kose.github.io/HR4ME-demo/abrechnung)
-8. [Rechnung vorbereiten](https://muhammet-kose.github.io/HR4ME-demo/abrechnung/neu)
+8. [Rechnung aus Monatsstunden erstellen](https://muhammet-kose.github.io/HR4ME-demo/abrechnung/neu)
 9. [Offene Zahlungen](https://muhammet-kose.github.io/HR4ME-demo/abrechnung?view=statuses)
 10. [Einsatz anlegen – ab Einsatzbeginn](https://muhammet-kose.github.io/HR4ME-demo/einsaetze/neu)
 11. [Einsatzgruppe anlegen](https://muhammet-kose.github.io/HR4ME-demo/einsaetze/teams/neu)
@@ -37,4 +37,8 @@ Diese Linkliste in Safari öffnen; die folgenden Seiten bleiben dann in Safari.
 18. [Dokumente](https://muhammet-kose.github.io/HR4ME-demo/dokumente)
 19. [Vorlagen und Schreiben](https://muhammet-kose.github.io/HR4ME-demo/dokumentvorlagen)
 
-Die neue Rechnungserstellung mit separater manueller Eingabe ist noch nicht umgesetzt.
+20. [Manuelle Rechnung erstellen](https://muhammet-kose.github.io/HR4ME-demo/abrechnung/neu?art=manuell)
+
+Manuelle Demo-Rechnungen benötigen keinen abgeschlossenen Monat. Kunde, Einsatz, Monat, Rechnungsgrund und Leistungspositionen werden direkt erfasst; danach kann die Muster-PDF heruntergeladen werden.
+
+„Stundennachweise“ bezeichnet die PDFs mit Einzelzeiten; „Monatsstunden“ die zusammengefassten Stunden eines Monats.
