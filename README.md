@@ -52,3 +52,7 @@ Stundennachweis hochladen → Stunden prüfen und übernehmen → Kalenderwoche 
 Der Monatsabschluss bleibt davon getrennt: Tagesstunden des Monats sammeln → Monat abschließen → AZK je Mitarbeiter aufteilen → Muster-LODAS exportieren. Wochen über zwei Monate werden anhand der tatsächlichen Arbeitstage aufgeteilt. Die AZK-Aufteilung ändert die Kundenrechnung nicht.
 
 Die Wochenrechnung und ihr PDF sind Demo-Belege. Es erfolgt kein Versand.
+
+[Vorschüsse öffnen](https://muhammet-kose.github.io/HR4ME-demo/zahlungen/) · [Vorschuss anlegen](https://muhammet-kose.github.io/HR4ME-demo/zahlungen/neu/)
+
+„Vorschuss anlegen“ öffnet eine eigene Seite mit dem Formular. Nach erfolgreichem Speichern erscheint die Bestätigung in der Vorschussliste.
