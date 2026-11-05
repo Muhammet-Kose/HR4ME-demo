@@ -24,7 +24,7 @@ Diese Linkliste in Safari öffnen; die folgenden Seiten bleiben dann in Safari.
 5. [Stunden prüfen](https://muhammet-kose.github.io/HR4ME-demo/monatsabrechnung/pruefung)
 6. [Monatsstunden](https://muhammet-kose.github.io/HR4ME-demo/monatsabrechnung/monatswerte)
 7. [Rechnungen – Rechnung mit „Prüfen“ öffnen](https://muhammet-kose.github.io/HR4ME-demo/abrechnung)
-8. [Rechnung aus Monatsstunden erstellen](https://muhammet-kose.github.io/HR4ME-demo/abrechnung/neu)
+8. [Rechnung aus Wochenstunden erstellen](https://muhammet-kose.github.io/HR4ME-demo/abrechnung/neu)
 9. [Offene Zahlungen](https://muhammet-kose.github.io/HR4ME-demo/abrechnung?view=statuses)
 10. [Einsatz anlegen – ab Einsatzbeginn](https://muhammet-kose.github.io/HR4ME-demo/einsaetze/neu)
 11. [Einsatzgruppe anlegen](https://muhammet-kose.github.io/HR4ME-demo/einsaetze/teams/neu)
@@ -42,3 +42,13 @@ Diese Linkliste in Safari öffnen; die folgenden Seiten bleiben dann in Safari.
 Manuelle Demo-Rechnungen benötigen keinen abgeschlossenen Monat. Kunde, Einsatz, Monat, Rechnungsgrund und Leistungspositionen werden direkt erfasst; danach kann die Muster-PDF heruntergeladen werden.
 
 „Stundennachweise“ bezeichnet die PDFs mit Einzelzeiten; „Monatsstunden“ die zusammengefassten Stunden eines Monats.
+
+21. [Wochen abrechnen](https://muhammet-kose.github.io/HR4ME-demo/monatsabrechnung/wochen?month=2026-10)
+
+## Wöchentlich abrechnen, monatlich AZK festlegen
+
+Stundennachweis hochladen → Stunden prüfen und übernehmen → Kalenderwoche abschließen → Wochenrechnung erstellen. Die Wochenübersicht zeigt je Kunde und Einsatz, welche Woche noch offen ist und ob ihre Rechnung bereits erstellt wurde.
+
+Der Monatsabschluss bleibt davon getrennt: Tagesstunden des Monats sammeln → Monat abschließen → AZK je Mitarbeiter aufteilen → Muster-LODAS exportieren. Wochen über zwei Monate werden anhand der tatsächlichen Arbeitstage aufgeteilt. Die AZK-Aufteilung ändert die Kundenrechnung nicht.
+
+Die Wochenrechnung und ihr PDF sind Demo-Belege. Es erfolgt kein Versand.
